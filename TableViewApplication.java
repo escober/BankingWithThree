@@ -261,7 +261,7 @@ public class TableViewApplication extends Application {
         addCustMonthlyPay.setPromptText("Monthly Payment");
  
         final Button addButton = new Button("Add");
-        final Button addButton1 = new Button("Print");
+        final Button printButton = new Button("Print");
         
         //eventhandler for addButton and if click will add data to the table
         addButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -291,7 +291,7 @@ public class TableViewApplication extends Application {
             }
         });
  
-        hb.getChildren().addAll(addCustID, addCustFName, addCustLName, addCustAddress, addCustStatus, addCustChkAcct, addCustNetSalary, addCustDownPayment, addCustMonthlyPay, addButton, addButton1);
+        hb.getChildren().addAll(addCustID, addCustFName, addCustLName, addCustAddress, addCustStatus, addCustChkAcct, addCustNetSalary, addCustDownPayment, addCustMonthlyPay, addButton, printButton);
         hb.setSpacing(3);
  
         final VBox vbox = new VBox();
